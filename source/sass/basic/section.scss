@@ -1,11 +1,11 @@
 .section {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 @media (min-width: $tablet) {
-  // .section {
-  //   margin-top: 100px;
-  //   margin-bottom: 100px;
-  // }
+  .section {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
 }
