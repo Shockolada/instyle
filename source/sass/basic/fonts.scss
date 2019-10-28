@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "minion";
+  src: url('../fonts/minionpro-regular.woff') format('woff'),
+    url('../fonts/Minion Pro Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "minion";
+  src: url('../fonts/minionpro-medium.woff') format('woff'),
+    url('../fonts/Minion Pro Medium Caption.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "minion";
+  src: url('../fonts/minionpro-bold.woff') format('woff'),
+    url('../fonts/Minion Pro Bold Caption.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}

@@ -1,0 +1,29 @@
+.testimonials__wrap {
+  position: relative;
+}
+
+.testimonials__info {
+  margin-bottom: 20px;
+
+  p {
+    margin: 0;
+    text-align: center;
+    line-height: 2;
+  }
+}
+
+@media (min-width: $desktopXS) {
+  .testimonials__wrap {
+    // margin-top: 50px;
+  }
+
+  .testimonials {
+    display: flex;
+  }
+
+  .testimonials__info {
+    order: 2;
+    flex-shrink: 0;
+    width: 35%;
+  }
+}

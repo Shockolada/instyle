@@ -1,0 +1,53 @@
+.company-success__list {
+  @include list-reset;
+  text-shadow: 1px 3px rgba(0,0,0,.1);  
+}
+
+.company-success__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.company-success__count {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  font-size: 70px;
+  font-weight: 700;
+}
+
+.company-success__count {
+  position: relative;
+  
+  span {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 70px;
+    width: 100px;
+    height: 140px;
+    border: 1px solid $color-accent;
+  }
+
+  .company-success__name {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: $desktopXS) {
+  .company-success__list {
+    display: flex;
+    justify-content: center;
+    margin-right: -20px;
+  }
+
+  .company-success__item {
+    width: calc(100% / 3 - 20px);
+    margin-right: 20px;
+  }
+
+  .company-success__name {
+    max-width: 90px;
+  }
+} 

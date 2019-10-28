@@ -1,0 +1,50 @@
+.button {
+  position: relative;
+  z-index: 1;
+  // display: inline-block;
+  // margin: 0 auto;
+  padding: 10px 30px;
+  border-radius: 35px;
+  border: none;
+  text-decoration: none;
+  text-align: center;
+  color: #ffffff;
+  white-space: nowrap;
+  font-size: 20px;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  background-color: $color-accent;
+
+  transition: all 0.2s linear;
+
+  cursor: pointer;
+}
+
+
+// .button:hover,
+// .button:focus {
+//   background-color: $color-dark;
+// }
+
+.button--transparent {
+  border: 1px solid #ffffff;
+  background-color: transparent;
+}
+
+.button--transparent:hover,
+.button--transparent:focus {
+  border: 1px solid $color-accent;
+  background-color: $color-accent;
+}
+
+
+// .button--dark {
+//   background-color: $color-dark;
+
+//   &:hover {
+//     background-color: $color-accent;
+//   }
+// }
+
+// .button--transparent {
+//   background-color: rgba($color-white, 0.35);
+// }

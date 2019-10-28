@@ -1,0 +1,113 @@
+.hero__wrap {
+  position: relative;
+  max-width: $max-width;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0 auto;
+  background-color: $color-dark;
+}
+
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  padding-top: 100px;
+  padding-bottom: 15px;
+}
+
+.hero__logo {
+  position: relative;
+  z-index: 2;
+  width: 180px;
+  margin: 0 auto;
+}
+
+// .hero__bottom {
+//   position: relative;
+//   top: unset;
+//   bottom: 0;
+// }
+
+.hero__services {
+  display: none;
+}
+
+.hero__btn {
+  position: relative;
+  z-index: 2;
+}
+
+.hero__parthners {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 190px;
+  margin-top: 30px;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.hero__parthners img {
+  width: 150px;
+}
+
+@media (min-width: $tabletS) {
+  .hero {
+    padding-top: 200px;
+  }
+
+  .hero__bottom {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .hero__parthners {
+    margin-top: 0;
+  }
+
+  .hero__parthners img {
+    width: 180px;
+  }
+}
+
+@media (min-width: $tablet) and (orientation: portrait) {
+  .hero__services {
+    display: block;
+  }
+}
+
+
+@media (min-width: $desktopXS) {
+  .hero {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .hero__logo {
+    width: 220px;
+    margin: 0;
+  }
+
+  .hero__services {
+    display: block;
+    width: 50%;
+  }
+
+  .hero__bottom {
+    align-self: flex-end;
+  }
+}
+
+@media (min-width: $desktopS) {
+  .hero__logo {
+    width: 300px;
+  }
+}
