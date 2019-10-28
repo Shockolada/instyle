@@ -30,21 +30,22 @@
   background-color: transparent;
 }
 
+.button--white {
+  padding: 5px 40px;
+  border: 1px solid $color-text;
+  background-color: transparent;
+  color: $color-text;
+}
+
 .button--transparent:hover,
 .button--transparent:focus {
   border: 1px solid $color-accent;
   background-color: $color-accent;
 }
 
-
-// .button--dark {
-//   background-color: $color-dark;
-
-//   &:hover {
-//     background-color: $color-accent;
-//   }
-// }
-
-// .button--transparent {
-//   background-color: rgba($color-white, 0.35);
-// }
+.button--white:hover,
+.button--white:focus {
+  border: 1px solid $color-accent;
+  background-color: $color-accent;
+  color: #ffffff;
+}

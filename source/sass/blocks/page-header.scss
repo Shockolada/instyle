@@ -38,11 +38,25 @@
   text-decoration: none;
 
   white-space: nowrap;
+  transition: 0.2s color linear;
 }
+
 
 .page-header__contacts-icon {
   margin-right: 20px;
   fill: #ffffff;
+  transition: 0.2s fill linear,
+    0.2s transform linear;
+}
+
+.page-header__contacts-link:hover,
+.page-header__contacts-link:focus {
+  color: $color-accent;
+
+  .page-header__contacts-icon {
+    fill: $color-accent;
+    transform: scale(1.2);
+  }
 }
 
 @media (min-width: $tablet) {

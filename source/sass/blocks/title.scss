@@ -23,9 +23,17 @@
   text-shadow: 1px 3px rgba(0,0,0,.1);
 }
 
+.title--big {
+  text-transform: uppercase;
+}
+
 @media (min-width: $tablet) {
   .title {
     margin: 50px 0;
+  }
+
+  .title--big {
+    text-align: left;
   }
 }
 

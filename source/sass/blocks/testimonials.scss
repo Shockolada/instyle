@@ -15,6 +15,19 @@
 @media (min-width: $desktopXS) {
   .testimonials__wrap {
     // margin-top: 50px;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: -9999px;
+      right: 50%;
+      background-color: $color-dark;
+    }
+  }
+
+  .testimonials__title {
+    text-align: right;
   }
 
   .testimonials {
@@ -25,5 +38,9 @@
     order: 2;
     flex-shrink: 0;
     width: 35%;
+
+    p {
+      text-align: left;
+    }
   }
 }

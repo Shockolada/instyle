@@ -10,7 +10,7 @@
   .swiper-button-next,
   .swiper-button-prev {
     position: relative;
-    
+
     width: auto;
     color: #ffffff;
     transition: color 0.2s linear;
@@ -51,12 +51,12 @@
 }
 
 @media (min-width: $desktopXS) {
-.testimonials-slider {
-  width: calc(100% - 35% -30px);
-  margin: 0;
-  margin-right: 30px;
-  border-radius: 30px;
-}
+  .testimonials-slider {
+    width: calc(100% - 35% -30px);
+    margin: 0;
+    margin-right: 30px;
+    border-radius: 30px;
+  }
 
   .testimonial-slider__btns {
     justify-content: flex-start;

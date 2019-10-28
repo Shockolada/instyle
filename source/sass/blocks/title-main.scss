@@ -1,0 +1,14 @@
+.title-main {
+  margin: 0;
+  font-size: 40px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+@media (min-width: $tablet) {
+  .title-main {
+    font-size: 60px;
+  }
+}

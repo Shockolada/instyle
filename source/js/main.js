@@ -44,7 +44,7 @@ $(document).ready(function () {
   //   }
   // });
 
-  // new WOW().init();
+  new WOW().init();
 
   // $(".service-preview__title--horizontal").lettering();
 
@@ -82,5 +82,20 @@ $(document).ready(function () {
         }
       }
     });
+
+    var swiper = new Swiper(".testimonials-slider", {
+      speed: 600,
+      parallax: true,
+      slidesPerView: 1,
+      // autoplay: {
+      //   delay: 4200
+      // },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+
+    
 
 });
