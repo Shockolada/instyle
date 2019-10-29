@@ -87,6 +87,19 @@ $(document).ready(function () {
       speed: 600,
       parallax: true,
       slidesPerView: 1,
+      autoplay: {
+        delay: 4200
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+
+    var swiper = new Swiper(".projects-slider", {
+      speed: 600,
+      parallax: true,
+      slidesPerView: 1,
       // autoplay: {
       //   delay: 4200
       // },
@@ -95,7 +108,5 @@ $(document).ready(function () {
         prevEl: '.swiper-button-prev',
       },
     });
-
-    
 
 });

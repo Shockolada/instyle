@@ -1,0 +1,18 @@
+.projects__filter {
+  display: none;
+}
+
+.projects__btn {
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+@media (min-width: $desktopXS) {
+  .projects__filter {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+}

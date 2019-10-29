@@ -1,10 +1,11 @@
 .about-us {
   display: flex;
   flex-direction: column;
+}
 
-  .title {
-    margin: 20px 0;
-  }
+
+.about-us__title {
+  margin: 20px 0;
 }
 
 .about-us__img-wrap {
@@ -69,6 +70,10 @@
 }
 
 @media (min-width: $tablet) {
+  .about-us__title {
+    margin-bottom: 40px;
+  }
+
   .about-us__list {
     display: flex;
     align-items: flex-start;

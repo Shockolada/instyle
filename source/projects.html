@@ -11,7 +11,53 @@
   ================================================== -->
   <main>
 
-    @@include('./html-partials/intro.html')
+    <div class="intro__wrap" style="background-image: url('img/top-bg.jpg');">
+      <div class="intro container">
+        <a class="intro__logo" href="index.html">
+          <img src="img/logo-white.svg" width="186" height="167" alt="Company logotype">
+        </a>
+        <h1 class="title-main intro__title">Projects</h1>
+      </div>
+    </div>
+
+    <section class="projects container section">
+      <div class="projects__filter filter">
+        <ul class="filter__list">
+          <li class="filter__item">
+            <a class="filter__link active" href="#">All</a>
+          </li>
+          <li class="filter__item">
+            <a class="filter__link" href="#">
+              <svg class="filter__icon" width="55" height="55">
+                <use xlink:href="img/sprite.svg#kitchen"></use>
+              </svg>
+              Complete cabinetry
+            </a>
+          </li>
+          <li class="filter__item">
+            <a class="filter__link" href="#">
+              <svg class="filter__icon" width="100" height="55">
+                <use xlink:href="img/sprite.svg#window-door"></use>
+              </svg>
+              Windows and doors trim install
+            </a>
+          </li>
+          <li class="filter__item">
+            <a class="filter__link" href="#">
+              <svg class="filter__icon" width="55" height="55">
+                <use xlink:href="img/sprite.svg#stairs"></use>
+              </svg>
+              Millwork, rails
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      @@include('./html-partials/gallery.html')
+
+      <a class="button projects__btn" href="">see all works</a>
+
+    </section>
 
 
 

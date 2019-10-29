@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('./html-partials/head.html')
+
+<body>
+
+  @@include('./html-partials/page-header.html')
+
+  <!-- Main Page Content
+  ================================================== -->
+  <main>
+
+    <div class="intro__wrap" style="background-image: url('img/top-bg.jpg');">
+      <div class="intro container">
+        <a class="intro__logo" href="index.html">
+          <img src="img/logo-white.svg" width="186" height="167" alt="Company logotype">
+        </a>
+        <h1 class="title-main intro__title">Services</h1>
+      </div>
+    </div>
+
+    <div class="container section">
+
+      <aside class="sidebar">
+        <ul class="services-list">
+          <li class="services-list__item">
+            <a href="" class="services-list__link">
+              Complete cabinetry
+              <span class="arrow services-list__arrow"></span>
+            </a>
+          </li>
+          <li class="services-list__item">
+            <a href="" class="services-list__link">
+              Windows and doors trim install
+              <span class="arrow services-list__arrow"></span>
+            </a>
+          </li>
+          <li class="services-list__item">
+            <a href="" class="services-list__link">
+              Millworks, rails
+              <span class="arrow services-list__arrow"></span>
+            </a>
+          </li>
+        </ul>
+
+        <div class="sidebar__contacts">
+          <div class="contacts-block consultation">
+            <span class="consultation__subtitle">Quick Contact</span>
+            <h3 class="consultation__title">Get Solution</h3>
+            <p>Contact us at the Interior office or submit a buisness inquiry online.</p>
+            <button class="button button--white consultation__btn">Contact</button>
+          </div>
+
+          <div class="contacts-block contact-info">
+            <h3 class="contact-info__title">Contact Info</h3>
+            <ul class="contact-info__list">
+              <li class="contact-info__item">
+                <a class="contact-info__link" href="tel:+2067785402">
+                  <svg class="page-header__contacts-icon" width="18" height="18">
+                    <use xlink:href="img/sprite.svg#call-answer"></use>
+                  </svg>
+                  + 206-778-5402
+                </a>
+              </li>
+              <li class="contact-info__item">
+                <a class="contact-info__link" href="mailto:instylewoodwork@yahoo.com">
+                  <svg class="page-header__contacts-icon" width="18" height="18">
+                    <use xlink:href="img/sprite.svg#envelope"></use>
+                  </svg>
+                  instylewoodwork@yahoo.com
+                </a>
+              </li>
+              <li class="contact-info__item">
+                <p class="contact-info__link" href="">
+                  <svg class="page-header__contacts-icon" width="18" height="18">
+                    <use xlink:href="img/sprite.svg#placeholder"></use>
+                  </svg>
+                  2848  University Street
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </aside>
+
+      @@include('./html-partials/about-service.html')
+
+    </div>
+
+  </main> <!-- / Main Page Content -->
+
+  @@include('./html-partials/page-footer.html')
+
+  @@include('./html-partials/modal-quote.html')
+
+  <!-- Java Script
+  ================================================== -->
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

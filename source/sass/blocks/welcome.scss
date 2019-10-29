@@ -8,79 +8,66 @@
   background-size: 35px 273px;
   background-position: top left;
 
-  // &::after {
-  //   content: "welcome";
-  //   position: absolute;
-  //   left: 15px;
-  //   line-height: 45px;
-  //   // top: 100%;
-  //   transform: rotate(270deg);
-  //   transform-origin: 0;
-  //   font-size: 50px;
-  //   font-weight: 700;
-  //   text-transform: uppercase;
-  //   color: #cccccc;
-  //   letter-spacing: 3px;
-  // }
+  p {
+    margin: 0;
+    margin-bottom: 10px;
+  }
 }
 
 .welcome__title {
   text-align: left;
 }
 
-// .welcome__bg {
-//   width: 100%;
-//   max-width: 400px;
-//   height: 0;
-//   margin: 0 auto;
-//   padding-bottom: 68%;
-//   background-repeat: no-repeat;
-//   background-position: center;
-//   background-size: contain;
-// }
-
 .welcome__img-side {
   position: relative;
   width: 100%;
   max-width: 500px;
-  margin: 0 auto;
+  margin: -20px auto;
+  // outline: 1px solid yellowgreen;
 }
 
 .welcome__img {
   width: 100%;
   height: 0;
-  padding-bottom: 80%;
+  padding-bottom: 100%;
 }
 
 .welcome__bg-wrap {
   position: absolute;
-  width: 100px;
-  height: 100px;
   transform: rotate(45deg);
-  transform-origin: center 100%;
+  transform-origin: center center;
   overflow: hidden;
-  // border: 10px solid rgba($color-dark, 0.5);
-  box-shadow: inset 0 0 10px 10px rgba($color-dark, 0.9);
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba($color-dark, 0.2);
+    box-shadow: inset 0 0 0 15px rgba($color-dark, 0.5);
+  }
 }
 
 .welcome__bg-1 {
-  top: 40px;
-  width: 250px;
-  height: 250px;
+  top:20%;
+  left: 15%;
+  width: 60%;
+  height: 60%;
 }
 
 .welcome__bg-2 {
-  top: 90px;
-  right: 150px;
-  // transform: translateY(-50%) rotate(-45deg);
-  width: 180px;
-  height: 180px;
+  top: 30%;
+  right: 8%;
+  width: 40%;
+  height: 40%;
 }
 
 .welcome__bg-3 {
-  width: 150px;
-  height: 150px;
-  bottom: 60px;
+  width: 35%;
+  height: 35%;
+  left:7%;
+  bottom: 15%;
 }
 
 .welcome__bg {
@@ -89,4 +76,33 @@
   transform: rotate(-45deg) translateY(-25%);
   background-size: cover;
   background-position: center;
+}
+
+@media (min-width: $tablet) {
+  .welcome__img-side {
+    margin: -50px auto;
+  }
+}
+
+@media (min-width: $desktopXS) {
+  .welcome {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .welcome__content {
+    margin-right: 50px;
+    margin-top: 50px;
+  }
+
+  .welcome__title {
+    margin-top: 0;
+  }
+
+  .welcome__img-side {
+    flex-shrink: 0;
+    width: 40%;
+  margin: -50px 0;
+
+  }
 }
