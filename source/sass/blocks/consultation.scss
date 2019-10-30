@@ -1,0 +1,29 @@
+.consultation {
+  p {
+    margin: 0;
+    text-shadow: inherit;
+  }
+
+  text-shadow: 1px 3px rgba(0,0,0,.1);
+}
+
+.consultation__subtitle {
+  display: block;
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-weight: 300;
+  text-shadow: inherit;
+}
+
+.consultation__title {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: 700;
+  text-shadow: inherit;
+}
+
+.consultation__btn {
+  margin-top: 30px;
+  text-shadow: inherit;
+}

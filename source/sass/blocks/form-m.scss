@@ -1,0 +1,115 @@
+.form-m {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-m__item {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.form-m__item label {
+  margin-bottom: 5px;
+  line-height: 1;
+  font-size: 17px;
+}
+
+.form-m__item input,
+.form-m__item textarea,
+.form-m__item select {
+  width: 100%;
+  height: 55px;
+  padding: 13px;
+  line-height: 1;
+  font-weight: 400;
+  border: none;
+  background-color: #ffffff;
+  border: 1px solid #e6e6e6;
+  font-size: 17px;
+  color: $color-text;
+
+  transition: border 0.2s linear;
+}
+
+.form-m__item select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right 0.75rem center/8px 10px;
+}
+
+
+.form-m__item--file {
+  margin: 15px 0;
+}
+
+.form-m__item--file label {
+  cursor: pointer;
+}
+
+.form-m__item input[type=file] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+}
+
+.form-m__item--file label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 55px;
+  padding: 10px 15px;
+  border: 1px dashed $color-accent;
+  text-align: center;
+  color: $color-accent;
+}
+
+.form-m__item textarea {
+  height: 120px;
+  resize: none;
+}
+
+.form-m__item input:hover,
+.form-m__item input:focus,
+.form-m__item textarea:hover,
+.form-m__item textarea:focus,
+.form-m__item select:hover,
+.form-m__item select:focus {
+  border: 1px solid $color-accent;
+}
+
+.form-m__btn {
+  min-width: 150px;
+  margin-top: 20px;
+}
+
+@media (min-width: $tablet) {
+  .form-m {
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .form-m__item--s {
+    width: calc(50% - 10px);
+    margin-right: 20px;
+  }
+
+  .form-m__item--s:nth-of-type(2n) {
+    margin-right: 0;
+  }
+
+  .form-m__item input,
+  .form-m__item textarea,
+  .form-m__item select {
+    font-size: 20px;
+  }
+}

@@ -43,11 +43,15 @@
 
 .services-lick__title {
   text-align: center;
-  transform: translateX(-100%);
+  // transform: translateY(-100%);
   width: 100%;
   margin: 0;
   font-size: 25px;
   color: #ffffff;
+  opacity: 0;
+
+  transition: opacity 0.25s linear,
+  transform 0.2s linear;
 }
 
 .services-links__icon {
@@ -62,4 +66,9 @@
 .services-links__link:focus {
   background-color: rgba(#ffffff, 0.1);
   box-shadow: 0 0 10px 10px rgba(#ffffff, 0.1);
+}
+
+.services-lick__title.active {
+  // transform: translateY(0);
+  opacity: 1;
 }

@@ -1,21 +1,21 @@
 $(document).ready(function () {
-  // $('.open-modal-quote').click(function () {
-  //   event.preventDefault();
-  //   $('.modal-quote').addClass('active');
-  //   $('.overlay').fadeIn(200);
-  // });
+  $('.modal-quote-btn').click(function () {
+    event.preventDefault();
+    $('.modal-quote').addClass('active');
+    $('.overlay').fadeIn(200);
+  });
 
-  // $('.overlay').click(function () {
-  //   event.preventDefault();
-  //   $(this).fadeOut(200);
-  //   $('.modal').removeClass('active');
-  // });
+  $('.overlay').click(function () {
+    event.preventDefault();
+    $(this).fadeOut(200);
+    $('.modal').removeClass('active');
+  });
 
-  // $('.modal__close-btn').click(function () {
-  //   event.preventDefault();
-  //   $('.overlay').fadeOut(200);
-  //   $('.modal').removeClass('active');
-  // });
+  $('.modal__close-btn').click(function () {
+    event.preventDefault();
+    $('.overlay').fadeOut(200);
+    $('.modal').removeClass('active');
+  });
 
   $('.menu__btn').click(function () {
     event.preventDefault();
@@ -24,47 +24,33 @@ $(document).ready(function () {
     $(this).toggleClass('active');
   });
 
-  // $('.service-info__name').click(function () {
-  //   $('.service-info__name').removeClass('active');
-  //   $(this).addClass('active');
+  $('.services-links__link').hover(function () {
+    $(this).closest('.services-links__item').find('.services-lick__title').toggleClass('active');
+  });
 
-  //   if ($(window).width() < 940) {
-  //     $('.service-info__text').stop().slideUp(200).removeClass('active');
-  //     $(this).next('.service-info__text').toggleClass('active').stop().slideToggle(200);
-  //   }
-  //   $('.service-info__text').removeClass('active');
-  //   $(this).next('.service-info__text').addClass('active');
-  // });
+  $('.company-success__count').html(function (i, html) {
+    // return html.replace(/^[0-9]/, '<span>$1</span>');
+    // return html.replace(/^[^a-zA-Z]*([a-zA-Z])/g, '<span>$1</span>');
+  });
 
-  // $(window).resize(function () {
-  //   if ($(window).width() >= 940) {
-  //     $('.service-info__text').css('display', 'block');
-  //   } else {
-  //     $('.service-info__text').css('display', 'none');
-  //   }
-  // });
+  
+  (function wrapFirstLetter () {
+    var item, i, span = "";
+    item = document.querySelectorAll(".company-success__count")[0];
+    span += "<span>";
+    span += item.innerText[0];
+    span += "</span>";
+    console.log(item.innerText.length);
+    for (i = 1; i < item.innerText.length; i++) {
+      if (item.innerText[i] !== " ") {
+        span += item.innerText[i];
+      }
+    }
+    item.innerHTML = span;
+  })();
+
 
   new WOW().init();
-
-  // $(".service-preview__title--horizontal").lettering();
-
-  // $(window).on('scroll', function () {
-  //   if ($(window).scrollTop() >= 200) {
-  //     $('.page-header__wrap').addClass('scrolled');
-  //   } else {
-  //     $('.page-header__wrap').removeClass('scrolled');
-  //   }
-  // });
-
-  // $('.scroll-down-button').click(function (event) {
-  //   event.preventDefault();
-  //   var id = $(this).attr('href'),
-  //     top = $(id).offset().top - 70;
-
-  //   $('body, html').animate({
-  //     scrollTop: top
-  //   }, 200);
-  // });
 
   var heroSlider = new Swiper(".hero-slider", {
     speed: 600,
@@ -108,18 +94,19 @@ $(document).ready(function () {
     },
   });
 
-  const slideCounterCurrent = $('.projects-slider__current');
-  const slideCounterAll = $('.projects-slider__all');
+  var slideCounterCurrent = $('.projects-slider__current');
+  var slideCounterAll = $('.projects-slider__all');
 
-  let slideAllEl = ($('.projects-slider .project-slider__slide')).length;
+  var slideAllEl = ($('.projects-slider .project-slider__slide')).length;
 
   slideCounterAll.text('/' + slideAllEl);
 
   projectSlider.on('slideChange', function () {
-    setTimeout(() => {
-      let slideCurrentEl = (($('.projects-slider .swiper-slide-active')).index() + 1);
+
+    setTimeout(function () {
+      var slideCurrentEl = (($('.projects-slider .swiper-slide-active')).index() + 1);
       slideCounterCurrent.text(slideCurrentEl);
-    }, 50);
+    }, 50)
   });
 
 });
