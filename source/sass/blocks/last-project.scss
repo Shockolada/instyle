@@ -1,0 +1,44 @@
+.last-project {
+
+}
+
+.last-project__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 90%;
+  margin: 0 auto;
+  margin-top: 30px;
+  font-weight: 500;
+  color: $color-text;
+  text-decoration: none;
+
+  transition: 0.2s color linear;
+}
+
+.last-project__link-arrow {
+  fill: $color-text;
+  margin-left: 10px;
+
+  transition: 0.2s fill linear;
+}
+
+.last-project__link:hover,
+.last-project__link:focus {
+  color: $color-accent;
+
+  .last-project__link-arrow {
+    fill: $color-accent;
+  }
+}
+
+@media (min-width: $tabletS) {
+  .last-project__link {
+    position: relative;
+    z-index: 1;
+    display: inline-flex;
+    height: 30px;
+    margin: 0;
+    margin-left: 30px;
+  }
+}

@@ -66,47 +66,60 @@ $(document).ready(function () {
   //   }, 200);
   // });
 
-    var swiper = new Swiper(".hero-slider", {
-      speed: 600,
-      // parallax: true,
-      slidesPerView: 1,
-      autoplay: {
-        delay: 4200
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true
-      },
-      breakpoints: {
-        900: {
-        }
-      }
-    });
+  var heroSlider = new Swiper(".hero-slider", {
+    speed: 600,
+    // parallax: true,
+    slidesPerView: 1,
+    autoplay: {
+      delay: 4200
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true
+    },
+    breakpoints: {
+      900: {}
+    }
+  });
 
-    var swiper = new Swiper(".testimonials-slider", {
-      speed: 600,
-      parallax: true,
-      slidesPerView: 1,
-      autoplay: {
-        delay: 4200
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
+  var testimonialSlider = new Swiper(".testimonials-slider", {
+    speed: 600,
+    parallax: true,
+    slidesPerView: 1,
+    autoplay: {
+      delay: 4200
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
 
-    var swiper = new Swiper(".projects-slider", {
-      speed: 600,
-      parallax: true,
-      slidesPerView: 1,
-      // autoplay: {
-      //   delay: 4200
-      // },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
+  var projectSlider = new Swiper(".projects-slider", {
+    speed: 600,
+    parallax: true,
+    slidesPerView: 1,
+    // autoplay: {
+    //   delay: 4200
+    // },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+
+  const slideCounterCurrent = $('.projects-slider__current');
+  const slideCounterAll = $('.projects-slider__all');
+
+  let slideAllEl = ($('.projects-slider .project-slider__slide')).length;
+
+  slideCounterAll.text('/' + slideAllEl);
+
+  projectSlider.on('slideChange', function () {
+    setTimeout(() => {
+      let slideCurrentEl = (($('.projects-slider .swiper-slide-active')).index() + 1);
+      slideCounterCurrent.text(slideCurrentEl);
+    }, 50);
+  });
 
 });

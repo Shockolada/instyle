@@ -13,14 +13,14 @@
 
     <div class="intro__wrap" style="background-image: url('img/top-bg.jpg');">
       <div class="intro container">
-        <a class="intro__logo" href="index.html">
+        <a class="intro__logo wow fadeInLeft"  data-wow-duration="0.5s" data-wow-delay="0.3s" href="index.html">
           <img src="img/logo-white.svg" width="186" height="167" alt="Company logotype">
         </a>
-        <h1 class="title-main intro__title">About Us</h1>
+        <h1 class="title-main intro__title wow fadeInRight" data-wow-duration="0.5s" data-wow-delay="0.3s">About Us</h1>
       </div>
     </div>
 
-    <section class="welcome container section">
+    <section class="welcome container section wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.1s">
       <div class="welcome__content">
         <h2 class="title title--big welcome__title">Welcome dear customer</h2>
         <p>From our company’s creation, our goal has been to provide honest, high-quality, affordable cabinetry directly
@@ -47,15 +47,15 @@
 
     <div class="achievements" style="background-image: url('img/achievement_bg.jpg');">
       <ul class="achievements__list container">
-        <li class="achievements__item">
+        <li class="achievements__item wow fadeInDown"  data-wow-duration="0.5s">
           <span class="achievements__count">14</span>
           Years of experience
         </li>
-        <li class="achievements__item">
+        <li class="achievements__item wow fadeInDown"  data-wow-duration="0.5s" data-wow-delay="0.2s">
           <span class="achievements__count">359</span>
           Happy clients
         </li>
-        <li class="achievements__item">
+        <li class="achievements__item wow fadeInDown"  data-wow-duration="0.5s" data-wow-delay="0.4s">
           <span class="achievements__count">400</span>
           Finished projects
         </li>
@@ -63,10 +63,10 @@
     </div>
 
     <section class="about-us container section">
-      <div class="about-us__img-wrap">
+      <div class="about-us__img-wrap wow fadeIn"  data-wow-duration="4s">
         <div class="about-us__img" style="background-image: url('img/gallery/Layer29.jpg');"></div>
       </div>
-      <div class="about-us__desc">
+      <div class="about-us__desc wow fadeInRight" data-wow-duration="1s">
         <h2 class="title title--big about-us__title">We are the best Interior, Exterior & Architecture Firm</h2>
         <div class="about-us__content">
           <p>Our company provides the best customer service possible from first contact to the completion of every
@@ -84,31 +84,37 @@
       <div class="about-us__list-wrap">
         <ul class="about-us__list">
           <li class="about-us__item">
-            <svg class="about-us__icon" width="100" height="100">
+            <svg class="about-us__icon wow zoomIn" width="100" height="100"  data-wow-duration="0.7s">
               <use xlink:href="img/sprite.svg#idea"></use>
             </svg>
-            <h3>Perfectly designed</h3>
-            <p>It is a long established fact that a reader will be distracted by the readable content of a page when
-              looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
-              letters, as opposed to using 'Content here, content here', making it look like readable English. </p>
+            <div class="about-us__text wow fadeInUp" data-wow-duration="1.2s">
+              <h3>Perfectly designed</h3>
+              <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+                looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
+                letters, as opposed to using 'Content here, content here', making it look like readable English. </p>
+            </div>
           </li>
           <li class="about-us__item">
-            <svg class="about-us__icon" width="100" height="100">
+            <svg class="about-us__icon wow zoomIn" width="100" height="100"  data-wow-duration="0.7s">
               <use xlink:href="img/sprite.svg#sketch"></use>
             </svg>
-            <h3>Carefully planed</h3>
-            <p>It is a long established fact that a reader will be distracted by the readable content of a page when
-              looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
-              letters, as opposed to using 'Content here, content here', making it look like readable English. </p>
+            <div class="about-us__text wow fadeInUp" data-wow-duration="1.2s">
+              <h3>Carefully planed</h3>
+              <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+                looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
+                letters, as opposed to using 'Content here, content here', making it look like readable English. </p>
+            </div>
           </li>
           <li class="about-us__item">
-            <svg class="about-us__icon" width="100" height="100">
+            <svg class="about-us__icon wow zoomIn" width="100" height="100"  data-wow-duration="0.7s">
               <use xlink:href="img/sprite.svg#execute"></use>
             </svg>
-            <h3>Smart execute</h3>
-            <p>It is a long established fact that a reader will be distracted by the readable content of a page when
-              looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
-              letters, as opposed to using 'Content here, content here', making it look like readable English. </p>
+            <div class="about-us__text wow fadeInUp" data-wow-duration="1.2s">
+              <h3>Smart execute</h3>
+              <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+                looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
+                letters, as opposed to using 'Content here, content here', making it look like readable English. </p>
+            </div>
           </li>
         </ul>
       </div>
@@ -120,7 +126,7 @@
 
   @@include('./html-partials/page-footer.html')
 
-  @@include('./html-partials/modal-quote.html')
+  <!-- @@include('./html-partials/modal-quote.html') -->
 
   <!-- Java Script
   ================================================== -->
