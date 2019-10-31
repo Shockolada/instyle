@@ -20,9 +20,12 @@
 
 .company-success__count {
   position: relative;
-  
-  span {
+
+  &::before {
+    content: attr(data-before);
     display: inline-flex;
+    padding-right: 3px;
+    margin-right: 3px;
     justify-content: center;
     align-items: center;
     padding-left: 70px;
@@ -30,7 +33,7 @@
     height: 140px;
     border: 1px solid $color-accent;
   }
-
+  
   .company-success__name {
     font-size: 20px;
   }

@@ -156,6 +156,7 @@ gulp.task('images', gulp.series('pngsprite', 'imagesmin', function (done) {
 gulp.task('copy', function () {
   return gulp.src([
       'source/fonts/**/*.{woff,woff2,otf,ttf}',
+      'source/favicon/**/*.*',
       'source/*.ico'
     ], {
       base: 'source'
