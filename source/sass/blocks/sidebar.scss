@@ -1,0 +1,7 @@
+@media (min-width: $desktopXS) {
+  .sidebar {
+    flex-shrink: 0;
+    width: 370px;
+    margin-right: 30px;
+  }
+}

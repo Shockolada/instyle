@@ -28,26 +28,26 @@ $(document).ready(function () {
     $(this).closest('.services-links__item').find('.services-lick__title').toggleClass('active');
   });
 
-  $('.company-success__count').html(function (i, html) {
+  // $('.company-success__count').html(function (i, html) {
     // return html.replace(/^[0-9]/, '<span>$1</span>');
     // return html.replace(/^[^a-zA-Z]*([a-zA-Z])/g, '<span>$1</span>');
-  });
+  // });
 
   
-  (function wrapFirstLetter () {
-    var item, i, span = "";
-    item = document.querySelectorAll(".company-success__count")[0];
-    span += "<span>";
-    span += item.innerText[0];
-    span += "</span>";
-    console.log(item.innerText.length);
-    for (i = 1; i < item.innerText.length; i++) {
-      if (item.innerText[i] !== " ") {
-        span += item.innerText[i];
-      }
-    }
-    item.innerHTML = span;
-  })();
+  // (function wrapFirstLetter () {
+  //   var item, i, span = "";
+  //   item = document.querySelectorAll(".company-success__count")[0];
+  //   span += "<span>";
+  //   span += item.innerText[0];
+  //   span += "</span>";
+  //   console.log(item.innerText.length);
+  //   for (i = 1; i < item.innerText.length; i++) {
+  //     if (item.innerText[i] !== " ") {
+  //       span += item.innerText[i];
+  //     }
+  //   }
+  //   item.innerHTML = span;
+  // })();
 
 
   new WOW().init();

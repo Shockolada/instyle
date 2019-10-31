@@ -1,0 +1,67 @@
+.about-service {
+  // margin-bottom: 30px;
+  color: #000000;
+  border-bottom: 1px solid transparent;
+
+  @include clearfix;
+
+  .about-service__title {
+    text-align: left;
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  h2,
+  h3 {
+    font-size: 25px;
+    font-weight: 500;
+  }
+
+  .about-service__img {
+    margin-bottom: 30px;
+  }
+
+  .about-service__img img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    float: none !important;
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
+    float: none;
+  }
+
+  ul {
+    @include list-reset;
+
+    li {
+      padding: .5em;
+      padding-left: 1.5em;
+      background: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3Csvg version='1.1' id='Слой_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 512 512' enable-background='new 0 0 512 512' xml:space='preserve'%3E%3Cpath fill='%23C55D61' d='M369.2,174.8c7.8,7.8,7.8,20.5,0,28.3L235,337.2c-7.8,7.8-20.5,7.8-28.3,0l-63.9-63.9 c-7.8-7.8-7.8-20.5,0-28.3c7.8-7.8,20.5-7.8,28.3,0l49.7,49.7l120-120C348.7,167,361.4,167,369.2,174.8z M512,256 c0,141.5-114.5,256-256,256C114.5,512,0,397.5,0,256C0,114.5,114.5,0,256,0C397.5,0,512,114.5,512,256z M472,256 c0-119.4-96.6-216-216-216C136.6,40,40,136.6,40,256c0,119.4,96.6,216,216,216C375.4,472,472,375.4,472,256z'/%3E%3C/svg%3E") no-repeat left .6em/1em 1em;
+    }
+  }
+}
+
+@media (min-width: $tabletS) {
+  .about-service {
+    .about-service__title {
+      font-size: 35px;
+    }
+
+    .about-service__img img {
+      height: 350px;
+    }
+
+    img {
+      float: right;
+    }
+  }
+}
+
+@media (min-width: $desktopS) {
+  
+} 

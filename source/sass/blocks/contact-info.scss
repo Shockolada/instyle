@@ -1,0 +1,45 @@
+.contact-info {}
+
+.contact-info__title {
+  margin: 0;
+  margin-bottom: 45px;
+  text-align: center;
+}
+
+.contact-info__list {
+  @include list-reset;
+  margin-bottom: 45px;
+}
+
+.contact-info__item {
+  margin-bottom: 45px;
+}
+
+.contact-info__link {
+  display: inline-flex;
+  align-items: center;
+  color: #ffffff;
+  text-decoration: none;
+
+  transition: 0.2s color linear;
+}
+
+.contact-info__icon {
+  width: 23px;
+  height: 23px;
+  margin-right: 10px;
+  fill: #ffffff;
+
+  transition: 0.2s fill linear,
+  0.2s transform linear;
+}
+
+a.contact-info__link:hover,
+a.contact-info__link:focus {
+  color: $color-accent;
+
+  .contact-info__icon {
+    fill: $color-accent;
+    transform: scale(1.1);
+  }
+}

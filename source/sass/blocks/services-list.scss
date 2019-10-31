@@ -1,5 +1,6 @@
 .services-list {
   @include list-reset;
+  margin-bottom: 30px;
 }
 
 .services-list__item:not(:first-of-type) .services-list__link {
@@ -43,7 +44,8 @@
 }
 
 .services-list__link:hover,
-.services-list__link:focus {
+.services-list__link:focus,
+  .services-list__link.active {
   background-color: $color-accent;
   color: #ffffff;
 
